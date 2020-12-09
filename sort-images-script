@@ -6,7 +6,7 @@
       $( "#record" ).disableSelection();
       $( "#record" ).sortable({
         update: function( event, ui ) {
-          var listItems = $('#record div');
+          var listItems = $('#record div.dmx-sort');
           listItems.each(function(idx) {
             $(this).find('.cos').val(idx+1);
           });
