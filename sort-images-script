@@ -1,17 +1,17 @@
-<!--sortableScript-->
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-  <script>
-    $(function() {
-      $( "#record" ).sortable({cursor: "move"},{revert:true},{scroll:true},{scrollSensitivity: 10},{tolerance: "pointer"});
-      $( "#record" ).disableSelection();
-      $( "#record" ).sortable({
-        update: function( event, ui ) {
-          var listItems = $('#record div.dmx-sort');
-          listItems.each(function(idx) {
-            $(this).find('.cos').val(idx+1);
-          });
-        }
-      });
-    });
-  </script>
-<!--//sortableScript-->
+    <!--sortableScript-->
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $( "#record" ).sortable({cursor: "move"},{revert:true},{scroll:true},{scrollSensitivity: 10},{tolerance: "pointer"});
+            $( "#record" ).disableSelection();
+            $( "#record" ).sortable({
+                update: function( event, ui ) {
+                    var listItems = $('.dmx-drag-container');
+                    listItems.each(function(idx) {
+                        $(this).find('.dmx-drag-item').val(idx+1);
+                    });
+                }
+            });
+        });
+    </script>
+    <!--//sortableScript-->
