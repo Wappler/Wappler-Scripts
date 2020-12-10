@@ -2,13 +2,13 @@
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script>
         $(function() {
-            $( "#drag-area" ).sortable({cursor: "move"},{revert:true},{scroll:true},{scrollSensitivity: 10},{tolerance: "pointer"});
-            $( "#drag-area" ).disableSelection();
-            $( "#drag-area" ).sortable({
+            $( "#dragArea" ).sortable({cursor: "move"},{revert:true},{scroll:true},{scrollSensitivity: 10},{tolerance: "pointer"});
+            $( "#dragArea" ).disableSelection();
+            $( "#dragArea" ).sortable({
                 update: function( event, ui ) {
-                    var listItems = $('.drag-item');
+                    var listItems = $('.dragItem');
                     listItems.each(function(idx) {
-                        $(this).find('drag-count').val(idx+1);
+                        $(this).find('dragCount').val(idx+1);
                     });
                 }
             });
