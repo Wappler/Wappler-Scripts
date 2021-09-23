@@ -1,6 +1,6 @@
 <div class="video-item">
-    <img class="card-img-top" alt="Introducing BOK-TV" src="https://i.ytimg.com/vi/<VIDEOCODE>/mqdefault.jpg">
-    <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#mdlVideo" data-bs-video="<VIDEOCODE>" aria-label="Play Video">
+    <img class="card-img-top" alt="Introducing BOK-TV" src="https://i.ytimg.com/vi/VIDEOCODE/mqdefault.jpg">
+    <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#mdlVideo" data-bs-video="VIDEOCODE" aria-label="Play Video">
         <svg class="btn-youtube">
             <use xlink:href="#icon-video"></use>
         </svg>
