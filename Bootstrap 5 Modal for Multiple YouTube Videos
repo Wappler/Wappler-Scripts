@@ -1,3 +1,4 @@
+    <!-- MODAL FOR YOUTUBE VIDEOS -->
     <style>
         #mdlVideo .modal-dialog {
           margin: 30px auto;
@@ -17,7 +18,6 @@
           opacity: 1;
         }
     </style>
-    <!-- MODAL FOR YOUTUBE VIDEOS -->
     <div class="modal fade" id="mdlVideo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" is="dmx-bs5-modal">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
