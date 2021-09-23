@@ -4,6 +4,5 @@
         <svg class="btn-youtube">
             <use xlink:href="#icon-video"></use>
         </svg>
-        <span class="visually-hidden">Introducing BOK-TV</span>
     </button>
 </div>
