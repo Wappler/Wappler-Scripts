@@ -1,3 +1,22 @@
+    <style>
+        #mdlVideo .modal-dialog {
+          margin: 30px auto;
+        }
+        #mdlVideo .modal-body {
+          position: relative;
+          padding: 0px;
+        }
+        #mdlVideo .close {
+          position: absolute;
+          right: -30px;
+          top: 0;
+          z-index: 999;
+          font-size: 2rem;
+          font-weight: normal;
+          color: var(--bs-light);
+          opacity: 1;
+        }
+    </style>
     <!-- MODAL FOR YOUTUBE VIDEOS -->
     <div class="modal fade" id="mdlVideo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" is="dmx-bs5-modal">
         <div class="modal-dialog modal-xl">
