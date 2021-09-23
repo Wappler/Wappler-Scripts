@@ -1,0 +1,29 @@
+    <!-- MODAL FOR YOUTUBE VIDEOS -->
+    <div class="modal fade" id="mdlVideo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" is="dmx-bs5-modal">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe title="YouTube video" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var videoModal = document.getElementById('mdlVideo')
+        videoModal.addEventListener('show.bs.modal', function (event) {
+            // Button that triggered the modal
+            var button = event.relatedTarget
+            // Extract info from data-bs-* attributes
+            var video = button.getAttribute('data-bs-video')
+            // Update the modal's content.
+            var modalBodyIframe = videoModal.querySelector('.modal-body iframe')
+
+            modalBodyIframe.src = 'https://www.youtube.com/embed/' + video + '?rel=0'
+        })
+        // Stop the video playing when modal is closed
+        videoModal.addEventListener('hidden.bs.modal', function (event) {
+            videoModal.querySelector('.modal-body iframe').src = ''
+        })
+    </script>
